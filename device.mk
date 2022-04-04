@@ -1,18 +1,12 @@
-LOCAL_PATH := device/ulefone/Note_11P
-
-# Dynamic Partitions
-PRODUCT_USE_DYNAMIC_PARTITIONS := true
+LOCAL_PATH := device/nokia/WSP_sprout
 
 # VNDK
 PRODUCT_TARGET_VNDK_VERSION := 30
 
 # API
-PRODUCT_SHIPPING_API_LEVEL := 30
+PRODUCT_SHIPPING_API_LEVEL := 28
 
-PRODUCT_PLATFORM := mt6771
-
-# A/B
-ENABLE_VIRTUAL_AB := true
+PRODUCT_PLATFORM := mt6761
 
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
@@ -32,10 +26,6 @@ PRODUCT_PACKAGES += \
     update_engine \
     update_verifier \
     update_engine_sideload
-    
-    
-PRODUCT_PACKAGES += \
-    android.hardware.fastboot@1.0-impl-mock
 
 # health Hal
 PRODUCT_PACKAGES += \
