@@ -1,26 +1,19 @@
-#from device
 ro.hardware.egl=meow
-ro.vendor.mediatek.platform=MT6765
-ro.boot.hardware=mt6762
-ro.hardware=mt6762
+ro.vendor.mediatek.platform=MT6761
 ro.vendor.mtk_f2fs_enable=0
 ro.vendor.mtk_emmc_support=1
-ro.vendor.mtk_trustkernel_tee_support=1
-ro.hardware.kmsetkey=trustkernel
-ro.hardware.gatekeeper=trustkernel
-odm.teksun.support.tee=true
+ro.vendor.mtk_trustonic_tee_support=1
+ro.hardware.kmsetkey=trustonic
 ro.crypto.volume.filenames_mode=aes-256-cts
-ro.product.model=Note 11P
-ro.product.brand=Ulefone
-ro.product.name=Note_11P
-ro.product.device=Note_11P
-ro.sys.xunhu_bt=Note 11P
-ro.sys.xunhu_rf_mode=FDD3M
-ro.sys.hxy_wifi_display=no
-ro.product.xunhu.device=g2062upt_v1_gd_sh2_gq_r
+ro.product.odm.manufacturer=HMD Global
+ro.product.odm.model=2.2
+ro.product.odm.brand=Nokia
+ro.product.odm.device=WSP_sprout
+ro.product.manufacturer=HMD Global
+ro.product.model=2.2
+ro.product.brand=Nokia
+ro.product.device=WSP_sprout
 ro.sf.lcd_density=320
-#
-#others functions
 ro.secure=0
 ro.adb.secure=0
 ro.debuggable=1
