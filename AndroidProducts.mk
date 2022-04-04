@@ -1,4 +1,4 @@
 PRODUCT_MAKEFILES := \
-     $(LOCAL_DIR)/twrp_Note_11P.mk
+     $(LOCAL_DIR)/twrp_WSP_sprout.mk
 
-COMMON_LUNCH_CHOICES := twrp_Note_11P-eng
+COMMON_LUNCH_CHOICES := twrp_WSP_sprout-eng
