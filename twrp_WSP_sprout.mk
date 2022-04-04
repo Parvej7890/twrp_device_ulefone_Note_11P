@@ -21,21 +21,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 # Installs gsi keys into ramdisk, to boot a developer GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
-# Virtual A/B OTA
-$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
-
 # Inherit from star device
-$(call inherit-product, device/ulefone/Note_11P/device.mk)
+$(call inherit-product, device/nokia/WSP_sprout/device.mk)
 
 # Inherit some common recovery stuff.
 $(call inherit-product, vendor/twrp/config/common.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := Note_11P
-PRODUCT_NAME := twrp_Note_11P
-PRODUCT_BRAND := Ulefone
-PRODUCT_MODEL := Note 11P
-PRODUCT_MANUFACTURER := Ulefone
+PRODUCT_DEVICE := WSP_sprout
+PRODUCT_NAME := twrp_WSP_sprout
+PRODUCT_BRAND := Nokia
+PRODUCT_MODEL := 2.2
+PRODUCT_MANUFACTURER := HMD Global
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE=Note_11P \
