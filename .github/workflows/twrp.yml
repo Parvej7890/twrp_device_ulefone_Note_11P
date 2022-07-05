@@ -55,14 +55,14 @@ jobs:
        - name: Checkout device tree
          uses: actions/checkout@v2
          with:
-          path: twrp/device/ulefone/Note_11P
+          path: twrp/device/nokia/WSP_sprout
              
        - name: Build
          run: |
               PATH=~/bin:$PATH
               cd twrp
-              export ALLOW_MISSING_DEPENDENCIES=true && source build/envsetup.sh &&lunch twrp_Note_11P-eng && mka $TARGET -j2
-              cp  out/target/product/Note_11P/boot.img    out/target/product/Note_11P/boot-Note_11P-main-$(date +"%Y%m%d-%H%M").img  
+              export ALLOW_MISSING_DEPENDENCIES=true && source build/envsetup.sh &&lunch twrp_WSP_sprout-eng && mka $TARGET -j2
+              cp  out/target/product/WSP_sprout/boot.img    out/target/product/WSP_sprout/boot-WSP_sprout-main-$(date +"%Y%m%d-%H%M").img  
              
        - name: Release recovery image
          uses: softprops/action-gh-release@v1
@@ -72,4 +72,4 @@ jobs:
           tag_name: TWRP_11-main
           name: main
           files: | 
-            twrp/out/target/product/Note_11P/boot*.img
+            twrp/out/target/product/WSP_sprout/boot*.img
