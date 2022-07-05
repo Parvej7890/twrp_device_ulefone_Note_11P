@@ -14,9 +14,9 @@ on:
 
 env:
   MANIFEST: https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp -b twrp-11
-  DEVICE: Note_11P
-  DT_LINK: https://github.com/lopestom/twrp_device_ulefone_Note_11P
-  DT_PATH: device/ulefone/Note_11P
+  DEVICE: WSP_sprout
+  DT_LINK: https://github.com/Parvej7890/twrp_device_ulefone_Note_11P
+  DT_PATH: device/nokia/WSP_sprout
   TARGET: bootimage
   TZ: Asia/manila
 
