@@ -6,7 +6,7 @@
 #
 
 # Device path
-DEVICE_PATH := device/tecno/KG8
+DEVICE_PATH := device/nokia/WSP_sprout
 
 # Architecture
 TARGET_ARCH := arm64
